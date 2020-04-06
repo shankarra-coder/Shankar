@@ -3,12 +3,15 @@
 def PrimeNumber(num):
     for i in range(2,num,1):
         if num % i == 0:
-            print('Number {} is NON PRIME'.format(num))
+            return False
             break
         else:
             continue
-    print('Number {} is PRIME'.format(num))
+    return True
 
 print('Enter an Integer Number :')
 num = int(input())
-PrimeNumber(num)
+if PrimeNumber(num) == True:
+    print("Number {} : Prime".format(num))
+else:
+    print("Number {} : Non Prime".format(num))
