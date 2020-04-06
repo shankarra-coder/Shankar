@@ -1,3 +1,3 @@
 
-print('Hello World !!!\n')
-print('Welcome to the world of Python')
+print('\nHello World !!!')
+print('Welcome to the world of Python\n')
